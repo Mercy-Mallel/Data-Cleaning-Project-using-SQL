@@ -6,7 +6,7 @@ The dataset was gotten from [Nashville Housing Data](https://github.com/Mercy-Ma
 
 ## Metadata
 The dataset is composed of 20 columns and 56,477 rows.
-+ UniqueID — id number attributed to a buyer.
++ UniqueID — id number attributed to each row.
 + ParcelID — code attributed to a land.
 + LandUse — shows the different uses of land.
 + SalesPrice — cost of land
@@ -25,3 +25,8 @@ The dataset is composed of 20 columns and 56,477 rows.
 + Owner_Address — owners house address
 + OwnerCity — city where owner lives
 + OwnerState — state where owner is located
+
+## Importing Data
+I created a database called Nashville Housing Data, then imported the table which I named Nashville Housing in Microsoft SQL Management Server Studio.
+
+## Data Cleaning
