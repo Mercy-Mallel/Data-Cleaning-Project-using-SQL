@@ -30,3 +30,14 @@ The dataset is composed of 20 columns and 56,477 rows.
 I created a database called Nashville Housing Data, then imported the table which I named Nashville Housing in Microsoft SQL Management Server Studio.
 
 ## Data Cleaning
+After going through the dataset, I observed that the dataset needed cleaning in the following ways:
+
++ The date is not in the standard format.
++ Some rows in the PropertyAddress is NULL.
++ The PropertyAddress has both the City and House Address in the same column.
++ The OwnerAddress has the state, city, and address on the same column.
++ Some roles in the SoldAsVacant has Y and N instead of Yes or No.
++ There are some duplicate rows that need to be removed.
++ Some Columns would not be useful for the analysis and therefore should be deleted.
+
+
