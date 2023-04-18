@@ -101,15 +101,15 @@ FROM NashvilleHousing
 
 
 
--- Change 0 and 1 to Yes and No Respectively in the 'Sold as Vacant' Field
+-- Change Y and N to Yes and No Respectively in the 'Sold as Vacant' Field
 
 SELECT SoldasVacant, COUNT( SoldAsVacant)
 FROM NashvilleHousing
 GROUP BY SoldAsVacant
 
 SELECT SoldAsVacant, 
-CASE WHEN SoldasVacant = 0 THEN 'No'
-	 WHEN SoldasVacant = 1 THEN 'Yes'
+CASE WHEN SoldasVacant = N THEN 'No'
+	 WHEN SoldasVacant = Y THEN 'Yes'
 	 END AS SoldASVacantUpdated
 FROM NashvilleHousing
 
@@ -119,8 +119,8 @@ ALTER COLUMN SoldasVacant nvarchar(50)
 
 UPDATE NashvilleHousing
 SET SoldasVacant  =  
-CASE WHEN SoldasVacant = 0 THEN 'No'
-	 WHEN SoldasVacant = 1 THEN 'Yes'
+CASE WHEN SoldasVacant = N THEN 'No'
+	 WHEN SoldasVacant = Y THEN 'Yes'
 	 END
 
 SELECT *
